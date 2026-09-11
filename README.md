@@ -1,5 +1,7 @@
 # db-readonly-mcp
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/david-mogbeyi-db-readonly-mcp-1wuvzv?v=38f4d0332b81617aa0e1c8bd3fb3cf08)](https://m8ven.ai/mcp/david-mogbeyi-db-readonly-mcp-1wuvzv)
+
 An [MCP](https://modelcontextprotocol.io) server that gives an AI assistant (Claude
 Code, Claude Desktop, or any other MCP client) guarded, **read-only** access to a
 Postgres database. Ask something like "get me all merchants created yesterday" and
