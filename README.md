@@ -191,16 +191,21 @@ why.
 
 ```bash
 npm run dev   # runs src/index.ts directly via tsx, loads .env via Node's --env-file
+npm test      # runs the test suite (no database required)
 ```
 
 ### Project structure
 
 ```
 src/
-  index.ts    # MCP server setup and tool definitions
+  index.ts    # entrypoint: loads config, opens the pool, connects the stdio transport
+  server.ts   # MCP server setup and tool definitions (readOnly/destructive/idempotent/openWorld hints)
   sqlGuard.ts # query validation (layer 2 of the safety model)
   db.ts       # Postgres pool setup (statement_timeout, pool size)
   config.ts   # env var loading/validation
+test/
+  *.test.ts   # unit tests for sqlGuard/config, and tool-level tests against server.ts using
+              # an in-memory MCP client/server pair with a fake pg Pool (no real database needed)
 ```
 
 ## Troubleshooting
