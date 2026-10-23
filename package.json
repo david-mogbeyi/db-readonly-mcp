@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/david-mogbeyi/db-readonly-mcp#readme",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@modelcontextprotocol/sdk": "^1.32.1",
     "pg": "^8.23.0",
     "zod": "^4.4.3"
   },
